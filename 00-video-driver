@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# sudo pacman -S linux-cachyos-nvidia
+# sudo pacman -S linux-cachyos-nvidia-open
+

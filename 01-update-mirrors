@@ -1,0 +1,19 @@
+#!/bin/bash
+sudo pacman-mirrors --country United_States
+sudo pacman-mirrors -f 0
+sudo pacman -Syyu --noconfirm
+yay -Syyua --noconfirm
+
+sudo pacman -S yay --noconfirm
+
+yay -S gnome-disk-utility stacer-bin --noconfirm
+
+sudo mkdir -p /media/hdd
+sudo chmod -R 777 /media/hdd
+echo "mount hard drive to /media/hdd using gnome-disk-utility"
+echo "disk - select hard disk - settings - edit mount options - mount point - media/hdd"
+
+yay -S google-chrome --noconfirm
+
+echo "Add/Remove Software - Settings - ThirdParty - Enable AUR support - Check for updates"
+

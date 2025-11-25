@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Installing the following essential packages:"
+
+pkgs="qt5-tools"
+
+echo $pkgs
+
+sudo pacman -S $pkgs --noconfirm
+
+
+pkgs="onlyoffice-bin xorg-xkill screenkey filezilla flameshot ksnip wavebox gedit gufw hardinfo jre etcher-bin peek pinta kdenlive zoom icaclient elisa obsidian bc rustdesk-bin tailscale tailscaledesktop fsearch"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+echo "Installation finished!"
+
+sudo systemctl enable tailscaled 
+sudo systemctl start tailscaled
+echo "sudo tailscale up"

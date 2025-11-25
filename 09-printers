@@ -1,0 +1,23 @@
+#!/bin/bash
+
+sudo usermod -a -G sys qiusheng
+
+echo "Installing printer drivers ..."
+
+pkgs="brscan-skey brscan4 hplip brother-hl-l2380dw"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+#sudo brsaneconfig4 -a name=Brother-Printer model=Brother HL-2280DW ip=192.168.1.231
+
+echo "Installation finished!"
+
+echo "Add printer -- Internet Printing Protocol (ipp) -- ipp://192.168.x.x -- Manually Provide a PPD File -- /opt/brother/Printers/HLL2380DW/cupswrapper/brother-HLL2380DW-cups-en.ppd"
+
+sudo systemctl enable --now avahi-daemon.service
+sudo pacman -S colord -y
+sudo systemctl enable --now colord.service
+
+# Add Printer - Selected the discovered printer - Dirverless (exact-cmd)

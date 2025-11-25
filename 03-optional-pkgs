@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Installing the following optional packages:"
+
+pkgs="solaar neofetch calibre gimp krita gscan2pdf pdfarranger inkscape xnconvert handbrake ttf-ms-fonts slack-desktop rhythmbox uxplay"
+
+echo $pkgs
+
+yay -S $pkgs --noconfirm
+
+echo "Installation finished!"
