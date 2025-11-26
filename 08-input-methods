@@ -2,19 +2,39 @@
 
 echo "Installing input methods ..."
 
-pkgs="adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts fcitx kcm-fcitx fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-ui-light fcitx-table-other fcitx-configtool"
+pkgs="fcitx5 fcitx5-configtool fcitx5-chinese-addons"
 
 echo $pkgs
 
 yay -S $pkgs --noconfirm
 
-touch ~/.xprofile
-echo "export GTK_IM_MODULE=fcitx" >> ~/.xprofile
-echo "export QT_IM_MODULE=fcitx" >> ~/.xprofile
-echo "export XMODIFIERS=@im=fcitx" >> ~/.xprofile
 
-echo "Installation finished!"
+# Install fcitx5 (Your new keyboard manager) and Language Keyboards: First, you need to install fcitx5 itself. Think of this as a special program that will manage your new language keyboards. We'll also install the Japanese and Chinese components at the same time. The good things is you can find these on the repo inside the CachyOS Package Installer.
 
-echo "Run fcitx-config-gtk3 - Add Input Method - Uncheck Only Show Current Language - Select WubiPinyin - Global Config - Trigger Input Method - Shift + Space"
+# fcitx5: The main input framework.
 
-echo "If fcitx does not work, install ibus-pinyin"
+# fcitx5-configtool: It seems to help with configuration if you use the terminal, not sure if it made it easier for me since I used the GUI, but the video includes it.
+
+# fcitx5-mozc: For Japanese input.
+
+# fcitx5-chinese-addons: A common input method for Chinese (Mandarin Pinyin).
+
+# Configure Fcitx 5 in Plasma System Settings: This is important for CachyOS Plasma users!
+
+# Quit any running Fcitx 5 processes (if you had tried to start it manually before).
+
+# Open your System Settings.
+
+# Navigate to "Input and Output" >''Keyboard''> "Virtual Keyboard".
+
+# From the menu, select "Fcitx 5" as your input method.
+
+# Reboot Your System.
+
+# Add Your Keyboards on the Input Method tab.
+
+# (optional)Set Your Shortcut Key:
+
+# Go to the "Global options" button under input method.
+
+# Look for "hotkey" (Mine was in Japanese so I'm not sure if it says the same in English).
