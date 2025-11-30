@@ -5,6 +5,9 @@ git config --global user.email "giswqs@gmail.com"
 git config --global credential.helper store
 conda config --set auto_activate_base false
 
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main       
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
 conda install -n base mamba -c conda-forge -y
 
 

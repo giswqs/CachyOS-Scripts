@@ -13,7 +13,4 @@ rm ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init fish
 
-conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main       
-conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
-
 echo "Installation finished!"
