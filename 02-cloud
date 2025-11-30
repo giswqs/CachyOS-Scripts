@@ -14,4 +14,13 @@ echo "sudo sysctl fs.inotify.max_user_watches=1048576" >> ./50-max_user_watches.
 sudo mv ./30-dropbox.conf /etc/sysctl.d/30-dropbox.conf
 sudo mv ./50-max_user_watches.conf /etc/sysctl.d/50-max_user_watches.conf
 
+# Get the current username
+USERNAME=$(whoami)
+
+# Start syncthing service for the current user
+sudo systemctl start syncthing@"$USERNAME"
+
+# Enable syncthing service for the current user
+sudo systemctl enable syncthing@"$USERNAME"
+
 echo "Installation finished!"
