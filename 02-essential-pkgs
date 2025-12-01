@@ -9,7 +9,7 @@ echo $pkgs
 sudo pacman -S $pkgs --noconfirm
 
 
-pkgs="onlyoffice-bin xorg-xkill screenkey filezilla flameshot ksnip wavebox gedit gufw hardinfo jre etcher-bin peek pinta kdenlive zoom elisa obsidian bc rustdesk-bin tailscale tailscaledesktop fsearch sshfs zsh"
+pkgs="onlyoffice-bin xorg-xkill screenkey filezilla flameshot ksnip wavebox gedit gufw hardinfo jre etcher-bin peek pinta kdenlive zoom elisa obsidian bc rustdesk-bin tailscale tailscaledesktop fsearch sshfs zsh okular"
 
 echo $pkgs
 
