@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Installing AI tools"
+
+curl -fsSL https://claude.ai/install.sh | bash
+sudo npm install -g @openai/codex
+
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+
+echo "Installation finished!"
