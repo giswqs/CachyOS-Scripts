@@ -16,9 +16,12 @@ Keyboard - NumLock on startup - Turn on
 
 Desktop Session - Uncheck Ask for confirmation -- Start with an empty session
 
-
 ## Change fish to zsh
 
 sudo pacman -S zsh
 chsh -s /usr/bin/zsh
 cp /etc/skel/.zshrc ~
+
+## KDE Wallet
+
+KDE Wallet - Launch Wallet Manager - Open - Change Password to empty
