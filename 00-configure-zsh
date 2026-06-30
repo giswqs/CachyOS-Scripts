@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo pacman -S zsh --noconfirm
+chsh -s /usr/bin/zsh
+cp /etc/skel/.zshrc ~

@@ -2,7 +2,7 @@
 
 echo "Installing the following optional packages:"
 
-pkgs="solaar neofetch calibre gimp krita gscan2pdf pdfarranger inkscape xnconvert handbrake ttf-ms-fonts slack-desktop rhythmbox uxplay"
+pkgs="calibre gimp pdfarranger inkscape ttf-ms-fonts slack-desktop"
 
 echo $pkgs
 
