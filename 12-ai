@@ -25,4 +25,10 @@ tmux source-file ~/.tmux.conf
 
 yay -S wrangler --noconfirm
 
+sudo pacman -S github-cli --noconfirm
+
+# wrangler login
+# gh auth login
+# npm login
+
 echo "Installation finished!"
