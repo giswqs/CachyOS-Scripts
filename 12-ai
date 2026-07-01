@@ -9,4 +9,18 @@ sudo npm install -g @openai/codex
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 
+sudo pacman -S rustup
+rustup default stable
+source ~/.bashrc
+source ~/.zshrc
+
+sudo systemctl status sshd
+sudo systemctl enable --now sshd
+sudo systemctl status sshd
+sudo tailscale up --ssh --advertise-exit-node
+sudo pacman -S tmux --noconfirm
+
+echo "set -g mouse on" >> ~/.tmux.conf
+tmux source-file ~/.tmux.conf
+
 echo "Installation finished!"
