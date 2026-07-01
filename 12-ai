@@ -23,4 +23,6 @@ sudo pacman -S tmux --noconfirm
 echo "set -g mouse on" >> ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
+yay -S wrangler --noconfirm
+
 echo "Installation finished!"
